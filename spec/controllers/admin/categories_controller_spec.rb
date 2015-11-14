@@ -38,7 +38,7 @@ describe Admin::CategoriesController do
     post :edit, :id => Factory(:category).id
     assert_response :redirect, :action => 'index'
   end
-
+  
   describe "test_destroy with GET" do
     before(:each) do
       test_id = Factory(:category).id
